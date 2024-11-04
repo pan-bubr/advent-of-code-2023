@@ -20,6 +20,7 @@ import day2 from "./solutions/day2.ts";
 import day3 from "./solutions/day3.ts";
 import day4 from "./solutions/day4.ts";
 import day5 from "./solutions/day5.ts";
+import day6 from "./solutions/day6.ts";
 
 let part1: number = 0;
 let part2: number = 0;
@@ -39,6 +40,9 @@ switch (day) {
     break;
   case "5":
     [part1, part2] = day5(input);
+    break;
+  case "6":
+    [part1, part2] = day6(input);
     break;
   default:
     alert(`Day ${day} not implemented yet.`);
