@@ -18,6 +18,7 @@ const input = (await Deno.readTextFile(inputFilePath).catch(() => {
 import day1 from "./solutions/day1.ts";
 import day2 from "./solutions/day2.ts";
 import day3 from "./solutions/day3.ts";
+import day4 from "./solutions/day4.ts";
 
 let part1: number = 0;
 let part2: number = 0;
@@ -31,6 +32,9 @@ switch (day) {
     break;
   case "3":
     [part1, part2] = day3(input);
+    break;
+  case "4":
+    [part1, part2] = day4(input);
     break;
   default:
     alert(`Day ${day} not implemented yet.`);
