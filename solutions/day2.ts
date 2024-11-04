@@ -114,7 +114,7 @@ export function parseLine(line: string): Game {
   };
 }
 
-export default function solve(input: string): [string, string] {
+export default function solve(input: string): [number, number] {
   const games = input.split("\n").map(parseLine);
 
   const part1 = games.filter((game) => {

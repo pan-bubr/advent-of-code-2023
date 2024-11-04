@@ -35,7 +35,7 @@
 
 // What is the sum of all of the calibration values?
 
-export default function solve(input: string): [string, string] {
+export default function solve(input: string): [number, number] {
   const part1 = input
     .split("\n")
     .map((line) => calibrationLinePart1(line))
@@ -46,7 +46,7 @@ export default function solve(input: string): [string, string] {
     .map((line) => calibrationLinePart2(line))
     .reduce((acc, n) => acc + n, 0);
 
-  return [part1.toString(), part2.toString()];
+  return [part1, part2];
 }
 
 export function calibrationLinePart1(line: string): number {

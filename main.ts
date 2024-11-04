@@ -18,8 +18,8 @@ const input = (await Deno.readTextFile(inputFilePath).catch(() => {
 import day1 from "./solutions/day1.ts";
 import day2 from "./solutions/day2.ts";
 
-let part1: string = "";
-let part2: string = "";
+let part1: number = 0;
+let part2: number = 0;
 
 switch (day) {
   case "1":
